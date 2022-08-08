@@ -9,3 +9,7 @@ Modelo:
     Produto: id, nome, quantidade, valor, observacao.
 Repositorio de produto:
     obterTodos, obterPorId, adicionar, atualizar, deletar.
+Serviços de produto:
+    obterTodos, obterPorId, adicionar, atualizar, deletar.
+Controle de produtos:
+    obterTodos, obterPorId, adicionar, atualizar, deletar.
