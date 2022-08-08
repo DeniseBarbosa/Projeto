@@ -1,0 +1,11 @@
+Objetivo:
+Criar uma API RestFull para controle de produtos.
+Descrição:
+    Controller > pasta responsavel para criar e guardar os controladores.
+    Model > pasta para guardar os modelos.
+    Repository > Onde será gravado os dados.
+    Services > Vai ser responsavel pela a regra de negocio.
+Modelo:
+    Produto: id, nome, quantidade, valor, observacao.
+Repositorio de produto:
+    obterTodos, obterPorId, adicionar, atualizar, deletar.
