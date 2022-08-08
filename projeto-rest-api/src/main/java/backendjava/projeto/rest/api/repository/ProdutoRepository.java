@@ -1,5 +1,6 @@
 package backendjava.projeto.rest.api.repository;
 
+import backendjava.projeto.rest.api.error.TratamentoDeErro;
 import backendjava.projeto.rest.api.modelo.Produto;
 import org.springframework.stereotype.Repository;
 
@@ -63,7 +64,7 @@ public class ProdutoRepository {
         Optional<Produto> produtoEncontrado = obterPorId(produto.getId());
         //Se produto encontrado estiver vazio
         if (produtoEncontrado.isEmpty()){
-            throw new InputMismatchException("Produto não encontrado");
+            throw new TratamentoDeErro("Produto não encontrado");
         }
         // Remover o produto antigo na lista
         deletar(produto.getId());
